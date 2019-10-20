@@ -3,7 +3,7 @@
 ## Build all docker images locally
 
 To build all the components locally, please run script
-```.\ZipPay_Assessment\Components\build-local.ps1```.
+```.\ZipPay_Assessment\Components\build-local.ps1```
 
 ## Bring up containers locally
 
