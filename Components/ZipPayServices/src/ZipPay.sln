@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Common", "ZipPay.Common\ZipPay.Common.csproj", "{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Services", "ZipPay.Services\ZipPay.Services.csproj", "{3B51DCF3-3217-4730-81D8-8C3D5FC2FFC9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{06490249-3BE4-442B-B908-DDE764BCC86B} = {06490249-3BE4-442B-B908-DDE764BCC86B}
+		{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1} = {21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Services.Data", "ZipPay.Services.Data\ZipPay.Services.Data.csproj", "{68E1046D-D89B-466D-8F7F-8AA9F06C6922}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Services.SchemaUpdater", "ZipPay.Services.SchemaUpdater\ZipPay.Services.SchemaUpdater.csproj", "{CA94BB41-8633-43AE-8C0C-A82F7CE14E7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Services.Api", "ZipPay.Services.Api\ZipPay.Services.Api.csproj", "{06490249-3BE4-442B-B908-DDE764BCC86B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipPay.Services.Tests", "ZipPay.Services.Tests\ZipPay.Services.Tests.csproj", "{D4C7CB25-3190-4C86-9671-7A305CF601E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E62B4E-39AE-4DB8-B40E-CBAA8AFF06B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B51DCF3-3217-4730-81D8-8C3D5FC2FFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B51DCF3-3217-4730-81D8-8C3D5FC2FFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B51DCF3-3217-4730-81D8-8C3D5FC2FFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B51DCF3-3217-4730-81D8-8C3D5FC2FFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E1046D-D89B-466D-8F7F-8AA9F06C6922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E1046D-D89B-466D-8F7F-8AA9F06C6922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E1046D-D89B-466D-8F7F-8AA9F06C6922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E1046D-D89B-466D-8F7F-8AA9F06C6922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA94BB41-8633-43AE-8C0C-A82F7CE14E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA94BB41-8633-43AE-8C0C-A82F7CE14E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA94BB41-8633-43AE-8C0C-A82F7CE14E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA94BB41-8633-43AE-8C0C-A82F7CE14E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06490249-3BE4-442B-B908-DDE764BCC86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06490249-3BE4-442B-B908-DDE764BCC86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06490249-3BE4-442B-B908-DDE764BCC86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06490249-3BE4-442B-B908-DDE764BCC86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C7CB25-3190-4C86-9671-7A305CF601E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C7CB25-3190-4C86-9671-7A305CF601E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C7CB25-3190-4C86-9671-7A305CF601E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C7CB25-3190-4C86-9671-7A305CF601E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEE66AA9-27BF-4D5D-A877-334AB0886500}
+	EndGlobalSection
+EndGlobal

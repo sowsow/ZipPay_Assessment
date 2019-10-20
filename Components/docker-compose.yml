@@ -1,0 +1,35 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:10-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password01
+      TZ: Australia/Sydney
+    ports:
+      - 5434:5432
+      
+  us_schemaupdater:
+    build: 
+      context: "./ZipPayServices"
+    environment:
+      APPLICATIONNAME: schemaupdater
+      db:address: db
+      db:username: postgres
+      db:password: password01
+      db:name: user-service
+      db:port: 5432
+
+  us_api:
+    build: 
+      context: "./ZipPayServices"
+    environment:
+      APPLICATIONNAME: api
+      db:address: db
+      db:username: postgres
+      db:password: password01
+      db:name: user-service
+      db:port: 5432
+    ports:
+      - 6003:6003

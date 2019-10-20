@@ -1,0 +1,29 @@
+{
+  "profiles": {
+    "Api": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "db:address": "localhost",
+        "db:name": "user-service",
+        "db:port": "5434",
+        "db:username": "postgres",
+        "ASPNETCORE_URLS": "http://0.0.0.0:6003/",
+        "db:password": "password01",
+        "NETCORE_ENVIRONMENT": "Development",
+        "APPLICATIONNAME": "api"
+      }
+    },
+    "SchemaUpdater": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "db:address": "localhost",
+        "ENVIRONMENT": "Development",
+        "db:name": "user-service",
+        "db:port": "5434",
+        "db:username": "postgres",
+        "db:password": "password01",
+        "APPLICATIONNAME": "schemaupdater"
+      }
+    }
+  }
+}
